@@ -14,8 +14,10 @@ function App() {
           var linkSource = `data:application/pdf;base64,${data}`;
           var downloadLink = document.createElement("a");
           var fileName = 'Formulario ';
-          downloadLink.href = linkSource;
-          downloadLink.download = fileName;
+          // downloadLink.href = linkSource;
+          // downloadLink.download = fileName;
+          downloadLink.setAttribute('href', linkSource);
+          downloadLink.setAttribute('download', fileName);
           downloadLink.click();
           downloadLink.remove();    
   }
