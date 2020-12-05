@@ -29,6 +29,8 @@ function App() {
           estamos en linea
         </p>
         <button id='carnet' onClick={() => reporteIndividual()} >descargar</button>
+        <a href="https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf">
+          Descarga aca </a>
       </header>
     </div>
   );
